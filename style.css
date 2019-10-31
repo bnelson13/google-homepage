@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html {
+    font-family: 'Roboto';
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    padding: 10px;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.navbar {
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(218, 214, 214,0);
+    width: 100%;
+    height: 56px;
+    top: 0;
+    left: 0;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.left-button {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: left;
+}
+
+.right-button {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: right;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px;
+}
+
+.logo img {
+    width: 400px;
+}
+
+.searchbar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 430px;
+    background: url(microphone.png) no-repeat scroll 5px;
+    background-size: 20px;
+    background-position: 95% 50%;
+}
+
+.bar {
+    border-radius: 25px;
+    width: 450px;
+    height: 20px;
+    -webkit-box-shadow: 2px 3px 0px -2px #ccc;
+    padding: 10px;
+    border:0px;
+    outline: none;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #CCC;
+    text-indent: 30px;
+    background: url(magnifier.png) no-repeat scroll 5px;
+    background-size: 20px;
+    background-position: 9px;
+}
+
+.bar:hover {
+    -webkit-box-shadow: 3px 6px 7px -3px #ccc;
+}
+
+.magnify {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+}
+
+.microphone {
+    width: 20px;
+}
+
+.buttons {
+    position: absolute;
+    display: inline-block;
+    top: 500px;
+    width: 500 px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.search-button {
+    position: relative;
+    float: left;
+    margin: 20px;
+    font-size: 16px;
+    padding: 12px;
+    border-color: rgb(245,245,245);
+    border-radius: 8px;
+    background: rgb(245,245,245);
+}
+
+.lucky-button {
+    position: relative;
+    float: right;
+    margin: 20px;
+    font-size: 16px;
+    padding: 12px;
+    border-color: rgb(245,245,245);
+    border-radius: 8px;
+    background: rgb(245,245,245);
+    z-index: 2;
+}
+
+.search-button:hover {
+    border-color: rgb(70, 70, 70);
+    cursor: pointer;
+}
+
+.lucky-button:hover {
+    border-color: rgb(70, 70, 70);
+    cursor: pointer;
+}
+
+.b-navbar {
+    display: inline-block;
+    position: absolute;
+    background: rgb(245, 245, 245);
+    border-top: 1px black;
+    width: 100%;
+    height: 56px;
+    bottom: 0;
+    left: 0;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    z-index: 2;
+    overflow:hidden;
+}
+
+.b-left-button {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: left;
+}
+
+.b-right-button {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: right;
+}
